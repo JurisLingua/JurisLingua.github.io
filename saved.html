@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="bg">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+  <title>Запазени</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <a class="navbar-brand ms-3" href="index.html">
+      <img src="/images/JURISLINGUA_logo.png" class="img-fluid" alt="Responsive image">
+    </a>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Търсене</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="">Запазени</a>
+        </li>
+        <li class="nav-item me-2">
+          <a class="nav-link" href="history.html">История на търсенията</a>
+        </li>
+        <div class="vr text-white"></div>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="">
+            <i class="fa-solid fa-user"></i>
+          </a>
+        </li>
+        <li class="nav-item me-2 text-white">
+          <a class="nav-link" href="">
+            <i class="fa-solid fa-cog"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="container-fluid mt-5">
+    <div class="row mx-5">
+      <div class="col">
+        <div class="dropdown">
+          <select class="form-select px-4 py-2 border-0 shadow-sm rounded-pill" aria-label="Default select example">
+            <option value="1">Норвегия</option>
+            <option value="2">Украйна</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control px-4 py-2 border-0 rounded-start-pill shadow-sm" placeholder="Търси..."
+            aria-label="seach" aria-describedby="basic-addon2">
+          <span class="input-group-text border-0 bg-white text-body-tertiary rounded-end-pill shadow-sm"
+            id="basic-addon2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control px-4 py-2 border-0 rounded-start-pill shadow-sm" placeholder="Дата"
+            aria-label="date" aria-describedby="basic-addon2">
+          <span class="input-group-text border-0 bg-white text-body-tertiary rounded-end-pill shadow-sm"
+            id="basic-addon2">
+            <i class="fa-solid fa-calendar"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="input-group mb-3">
+          <input type="text" class="readonly form-control px-4 py-2 border-0 rounded-start-pill shadow-sm"
+            value="Последно търсени" aria-label="date" aria-describedby="basic-addon2">
+          <span class="input-group-text border-0 bg-white text-body-tertiary rounded-end-pill shadow-sm"
+            id="basic-addon2">
+            <i class="fa-solid fa-filter"></i>
+          </span>
+        </div>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-secondary px-4 py-2 shadow-sm rounded-pill">Изчисти</button>
+      </div>
+    </div>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseOne">
+            <span>
+              <span>Право на отпуск</span>
+              <small class="text-muted">02.02.2023 г.</small>
+            </span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu orci pharetra, interdum nibh nec, dictum
+            risus. Aliquam erat volutpat. In bibendum blandit tellus in elementum. In sed consequat felis, vulputate
+            euismod tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Vestibulum ac iaculis ante. Quisque fringilla ut quam eu mollis. Maecenas interdum turpis at tortor
+            tristique, a ultrices metus semper. Nulla faucibus fermentum neque id rhoncus. Maecenas vitae suscipit quam.
+            Proin eleifend tellus nisi, vitae condimentum ligula tincidunt vel.
+            <br />
+            <div>
+              <button type="button" class="btn btn-secondary px-4 py-2 shadow-sm rounded-pill">Прочети още</button>
+              <button type="button" class="btn btn-light px-4 py-2 shadow-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#deleteModal">Изтрий</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseTwo">
+            <span>
+              <span>Признаване на трудови права, придобити в чужбина</span>
+              <small class="text-muted">01.02.2023 г.</small>
+            </span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu orci pharetra, interdum nibh nec, dictum
+            risus. Aliquam erat volutpat. In bibendum blandit tellus in elementum. In sed consequat felis, vulputate
+            euismod tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Vestibulum ac iaculis ante. Quisque fringilla ut quam eu mollis. Maecenas interdum turpis at tortor
+            tristique, a ultrices metus semper. Nulla faucibus fermentum neque id rhoncus. Maecenas vitae suscipit quam.
+            Proin eleifend tellus nisi, vitae condimentum ligula tincidunt vel.
+            <br />
+            <div>
+              <button type="button" class="btn btn-secondary px-4 py-2 shadow-sm rounded-pill">Прочети още</button>
+              <button type="button" class="btn btn-light px-4 py-2 shadow-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#deleteModal">Изтрий</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseThree">
+            <span>
+              <span>Трудов договор със срок на изпитване</span>
+              <small class="text-muted">26.01.2023 г.</small>
+            </span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu orci pharetra, interdum nibh nec, dictum
+            risus. Aliquam erat volutpat. In bibendum blandit tellus in elementum. In sed consequat felis, vulputate
+            euismod tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Vestibulum ac iaculis ante. Quisque fringilla ut quam eu mollis. Maecenas interdum turpis at tortor
+            tristique, a ultrices metus semper. Nulla faucibus fermentum neque id rhoncus. Maecenas vitae suscipit quam.
+            Proin eleifend tellus nisi, vitae condimentum ligula tincidunt vel.
+            <br />
+            <div>
+              <button type="button" class="btn btn-secondary px-4 py-2 shadow-sm rounded-pill">Прочети още</button>
+              <button type="button" class="btn btn-light px-4 py-2 shadow-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#deleteModal">Изтрий</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFour">
+            <span>
+              <span>Прекратяване на трудов договор със срок на изпитване</span>
+              <small class="text-muted">25.02.2023 г.</small>
+            </span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu orci pharetra, interdum nibh nec, dictum
+            risus. Aliquam erat volutpat. In bibendum blandit tellus in elementum. In sed consequat felis, vulputate
+            euismod tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Vestibulum ac iaculis ante. Quisque fringilla ut quam eu mollis. Maecenas interdum turpis at tortor
+            tristique, a ultrices metus semper. Nulla faucibus fermentum neque id rhoncus. Maecenas vitae suscipit quam.
+            Proin eleifend tellus nisi, vitae condimentum ligula tincidunt vel.
+            <br />
+            <div>
+              <button type="button" class="btn btn-secondary px-4 py-2 shadow-sm rounded-pill">Прочети още</button>
+              <button type="button" class="btn btn-light px-4 py-2 shadow-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#deleteModal">Изтрий</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+            aria-controls="panelsStayOpen-collapseFive">
+            <span>
+              <span>Нормално работно време</span>
+              <small class="text-muted">18.06.2023 г.</small>
+            </span>
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+          aria-labelledby="panelsStayOpen-headingFive">
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu orci pharetra, interdum nibh nec, dictum
+            risus. Aliquam erat volutpat. In bibendum blandit tellus in elementum. In sed consequat felis, vulputate
+            euismod tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Vestibulum ac iaculis ante. Quisque fringilla ut quam eu mollis. Maecenas interdum turpis at tortor
+            tristique, a ultrices metus semper. Nulla faucibus fermentum neque id rhoncus. Maecenas vitae suscipit quam.
+            Proin eleifend tellus nisi, vitae condimentum ligula tincidunt vel.
+            <br />
+            <div>
+              <button type="button" class="btn btn-secondary px-4 py-2 shadow-sm rounded-pill">Прочети още</button>
+              <button type="button" class="btn btn-light px-4 py-2 shadow-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#deleteModal">Изтрий</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="deleteModalLabel">Изтриване на запис!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Сигурни ли сте, че искате да изтриете записа?<br/>Изтриването на запазено търсене е необратим процес!
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary px-4 py-2 shadow-sm rounded-pill" data-bs-dismiss="modal">Потвърди</button>
+            <button type="button" class="btn btn-light px-4 py-2 shadow-sm rounded-pill" data-bs-dismiss="modal">Откажи</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./main.js"></script>
+</body>
+
+</html>
