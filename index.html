@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html class="h-100" lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -10,7 +10,7 @@
   <title>Juris Lingua</title>
 </head>
 
-<body>
+<body class="h-100 overflow-hidden">
   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
     <a class="navbar-brand ms-3" href="">
       <img src="images/JURISLINGUA_logo.png" class="img-fluid" alt="Responsive image">
@@ -20,11 +20,8 @@
         <li class="nav-item">
           <a class="nav-link active" href="">Търсене</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="saved.html">Запазени</a>
-        </li>
         <li class="nav-item me-2">
-          <a class="nav-link" href="history.html">История на търсенията</a>
+          <a class="nav-link" href="saved.html">Запазени</a>
         </li>
         <div class="vr text-white"></div>
         <li class="nav-item mx-2">
@@ -40,101 +37,132 @@
       </ul>
     </div>
   </nav>
-  <header class="page-header header container-fluid">
-    <div class="col py-5 bg-creamy">
-      <div class="row mx-auto py-5 my-3">
-        <div class="col"></div>
-        <div class="col-6 p-0">
-          <div class="input-group mb-3">
-            <div class="dropdown col-3">
-              <select class="form-select px-3 py-3 border-0 rounded-start-pill shadow-sm" name="language"
-                id="countrySelect">
-                <option value="Norway">Норвегия</option>
-                <option value="Ukraine">Украйна</option>
-              </select>
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col-8">
+        <div class="row py-5 my-3">
+          <div class="col"></div>
+          <div class="col-9 p-0">
+            <div class="input-group mb-3">
+              <div class="dropdown col-3">
+                <select class="form-select px-3 py-3 border-0 rounded-start-pill shadow-sm" name="language"
+                  id="countrySelect">
+                  <option value="Norway">Норвегия</option>
+                  <option value="Ukraine">Украйна</option>
+                </select>
+              </div>
+              <input id="search-input" type="text" class="form-control border-0 z-0 shadow-sm" placeholder="Търси..."
+                aria-label="Text input with dropdown button">
             </div>
-            <input id="search-input" type="text" class="form-control border-0 z-0 shadow-sm" placeholder="Търси..."
-              aria-label="Text input with dropdown button">
+          </div>
+          <div class="col z-1" id="search-button">
+            <span class="badge rounded-circle text-bg-danger fs-2 p-4 shadow main-search-button">
+              <a class="text-white" href="working-time.html"><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
         </div>
-        <div class="col z-1" id="search-button">
-          <span class="badge rounded-circle text-bg-danger fs-2 p-4 shadow main-search-button"><i
-              class="fa-solid fa-magnifying-glass"></i>
+        <div class="row">
+          <div class="col p-0">
+            <h5 class="text-center">История на търсенията</h5>
+            <div class="row my-4">
+              <div class="col"></div>
+              <div class="col-2 text-center bg-white rounded-pill p-2 shadow clickable">
+                <a class="link-dark link-underline link-underline-opacity-0" href="working-time.html"> Работна
+                  седмица</a>
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="row my-4">
+              <div class="col"></div>
+              <div class="col-3 text-center bg-white rounded-pill  p-2 shadow clickable">
+                Минимална
+                работна заплата
+              </div>
+              <div class="col"></div>
+            </div>
+            <div class="row my-4">
+              <div class="col"></div>
+              <div class="col-2 text-center bg-white rounded-pill  p-2 shadow clickable">
+                Платен отпуск
+              </div>
+              <div class="col"></div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="col ps-4 bg-gray h-100">
+        <div class="my-4">
+          <h3 class="text-center">Най-търсени казуси</h3>
+        </div>
+        <div class="row my-3">
+          <div class="col mb-3 me-2">
+            <div type="button" class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <a class="link-dark link-underline link-underline-opacity-0" href="working-time.html"> Работно
+                  време</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 me-2">
+            <div type="button" class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                Трудови<br>договори
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col mb-3 me-2">
+            <div type="button" class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                Трудово<br>възнаграждание
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 me-2">
+            <div type="button" class="card h-100 shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                Отпуски
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row my-3">
+          <div class="col mb-3 me-2">
+            <div type="button" class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                Прекратяване на трудово правоотношение
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 me-2">
+            <div type="button" class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                Професионална<br>квалификация
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mb-3 me-2">
+            <div type="button" class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                Трудов<br>стаж
+              </div>
+            </div>
+          </div>
+          <div class="col mb-3 me-2">
+            <div type="button" class="card shadow-sm border-0 h-100">
+              <div class="card-body text-center">
+                Извършване на работа<br>от разстояние
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <div class="container my-4 mx-auto">
-      <h2 class="mx-auto">Най-търсени казуси</h2>
-    </div>
-    <div class="container mx-auto">
-      <div class="row my-3">
-        <div class="col mb-3 me-5" id="FAQ0">
-          <div type="button" class="card shadow-sm border-0">
-            <div class="card-body text-center">
-              Трудови<br>договори
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3 me-5" id="FAQ1">
-          <div type="button" class="card shadow-sm border-0">
-            <div class="card-body text-center">
-              Работно време<br>и почивки
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3 me-5" id="FAQ2">
-          <div type="button" class="card shadow-sm border-0">
-            <div class="card-body text-center">
-              Трудово<br>възнаграждание
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row my-3">
-        <div class="col mb-3 me-5" id="FAQ3">
-          <div type="button" class="card h-100 shadow-sm border-0">
-            <div class="card-body text-center">
-              Отпуски
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3 me-5" id="FAQ4">
-          <div type="button" class="card shadow-sm border-0">
-            <div class="card-body text-center">
-              Прекратяване на трудово правоотношение
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3 me-5" id="FAQ5">
-          <div type="button" class="card shadow-sm border-0">
-            <div class="card-body text-center">
-              Професионална<br>квалификация
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col mb-3 me-5" id="FAQ6">
-          <div type="button" class="card shadow-sm border-0">
-            <div class="card-body text-center">
-              Трудов<br>стаж
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3 me-5" id="FAQ7">
-          <div type="button" class="card shadow-sm border-0">
-            <div class="card-body text-center">
-              Извършване на работа<br>от разстояние
-            </div>
-          </div>
-        </div>
-        <div class="col mb-3 me-5">
-        </div>
-      </div>
-    </div>
-  </header>
-  <script src="./main.js" type="text/javascript"></script>
-  <script src="./search.js" type="text/javascript"></script>
+    <script src="./main.js" type="text/javascript"></script>
+    <script src="./search.js" type="text/javascript"></script>
 </body>
 
 </html>
